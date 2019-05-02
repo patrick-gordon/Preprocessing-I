@@ -77,12 +77,25 @@ html{
 header {
 	nav {
 		padding-bottom:20px;
-		a {
+
+		@media(max-width:500px){
+			padding-bottom:0px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+			a {
 			color:white;
 			// background-color:pink;
 			font-size:@font-size-3;
 			margin-left:6rem;
 			text-decoration: none;
+
+			@media(max-width:500px) {
+				flex-direction: column;
+				align-items: center;
+				margin:0;
+			}
 		}
 	}//nav
 }//header
@@ -94,36 +107,59 @@ header {
 	padding:20px;
 	border:1px solid black;
 	background-color:grey;
+
+	@media(max-width:500px) {
+		background-color:green;
+		width: 100%;
+		padding:0;
+
+	}
 	img{
 		height:40%;
 		width:40%;
 		margin-bottom:20px;
+
+		@media(max-width:500px){
+			width: 100%;
+			margin-bottom: 0px;
+		
+		}
 	}
 	h1{
 		font-size: @font-size-1;
 		margin-bottom: 20px;
+
+		@media(max-width:500px){
+			font-size: @font-size-2;
+			text-align: center;
+		}
 	}
 	p{
 		font-size: @font-size-2;
 		margin-bottom:50px;
+		text-align: center;
 	}
 	button{
 		// background-color:pink;
 		height: 60px;
 		border-radius: 10px;
-		
 	}
 }//intro-section
 
 .skills{
 	display:flex;
-justify-content: space-between;
-	
+	justify-content: space-between;
+
+	@media(max-width:500px){
+		display:flex;
+		flex-direction: column;
+	}
 }
 	.skills-left{
 		border:1px solid gray;
 		width:50%;
 		margin-bottom: 20px;
+		}
 		h1{
 		color:white;
 		font-size: @font-size-1;
@@ -181,4 +217,3 @@ justify-content: space-between;
 		}
 	}
 
-	

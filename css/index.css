@@ -145,11 +145,26 @@ html {
 header nav {
   padding-bottom: 20px;
 }
+@media (max-width: 500px) {
+  header nav {
+    padding-bottom: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 header nav a {
   color: white;
   font-size: 2.5rem;
   margin-left: 6rem;
   text-decoration: none;
+}
+@media (max-width: 500px) {
+  header nav a {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
 }
 .intro-section {
   height: 100%;
@@ -158,18 +173,38 @@ header nav a {
   border: 1px solid black;
   background-color: grey;
 }
+@media (max-width: 500px) {
+  .intro-section {
+    background-color: green;
+    width: 100%;
+    padding: 0;
+  }
+}
 .intro-section img {
   height: 40%;
   width: 40%;
   margin-bottom: 20px;
 }
+@media (max-width: 500px) {
+  .intro-section img {
+    width: 100%;
+    margin-bottom: 0px;
+  }
+}
 .intro-section h1 {
   font-size: 4rem;
   margin-bottom: 20px;
 }
+@media (max-width: 500px) {
+  .intro-section h1 {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
 .intro-section p {
   font-size: 1.2rem;
   margin-bottom: 50px;
+  text-align: center;
 }
 .intro-section button {
   height: 60px;
@@ -179,10 +214,21 @@ header nav a {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .skills {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .skills-left {
   border: 1px solid gray;
   width: 50%;
   margin-bottom: 20px;
+}
+@media (max-width: 500px) {
+  .skills-left {
+    text-align: center;
+  }
 }
 .skills-left h1 {
   color: white;
