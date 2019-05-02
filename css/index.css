@@ -148,7 +148,7 @@ header nav {
 header nav a {
   color: white;
   font-size: 2.5rem;
-  margin: 4rem;
+  margin-left: 6rem;
   text-decoration: none;
 }
 .intro-section {
@@ -159,8 +159,9 @@ header nav a {
   background-color: grey;
 }
 .intro-section img {
-  height: 20rem;
-  width: 20rem;
+  height: 40%;
+  width: 40%;
+  margin-bottom: 20px;
 }
 .intro-section h1 {
   font-size: 4rem;
@@ -181,6 +182,7 @@ header nav a {
 .skills-left {
   border: 1px solid gray;
   width: 50%;
+  margin-bottom: 20px;
 }
 .skills-left h1 {
   color: white;
@@ -202,6 +204,32 @@ header nav a {
 }
 .skills-right p {
   padding-top: 30px;
+  color: white;
+  font-size: 1.2rem;
+}
+.work-history {
+  border: 1px solid white;
+  height: 500px;
+}
+.work-history h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 4rem;
+  color: white;
+  border-bottom: 1px solid;
+}
+.work-history p {
+  display: inline;
+  color: white;
+  font-size: 1.2rem;
+  margin-left: 10rem;
+}
+footer {
+  height: 100px;
+}
+footer p {
+  margin-top: 30px;
+  text-align: center;
   color: white;
   font-size: 1.2rem;
 }
